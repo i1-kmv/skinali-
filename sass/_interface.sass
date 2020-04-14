@@ -29,6 +29,8 @@ img
     color: #ffffff
     +bold
     text-decoration: none
+    &:hover
+        cursor: pointer
     &-fitting
         padding: 10px
         text-transform: uppercase
@@ -76,7 +78,9 @@ img
 
 
 @media  (max-width: 576px)
-    .button-o
+    .button
+        font-size: 10px
+        &-o
         font-size: 10px
     .section
         padding: 60px 0
