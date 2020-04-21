@@ -821,18 +821,11 @@ img {
 
 @media (max-width: 768px) {
   .blog__heading {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: center;
   }
 }
 
@@ -1046,6 +1039,7 @@ img {
   .reviews-slider__item {
     text-align: center;
     margin-right: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1138,6 +1132,10 @@ img {
           justify-content: space-between;
 }
 
+.before-slider {
+  z-index: 1;
+}
+
 .before-slider-wrap {
   max-width: 640px;
   margin: auto;
@@ -1158,6 +1156,7 @@ img {
           align-items: center;
   padding: 0;
   margin-top: 30px;
+  z-index: -1;
 }
 
 .before-slider__dots li {
